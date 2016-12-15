@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+E:\JavaWeb_STUDY\.metadata\.plugins\org.eclipse.jdt.core
+1148280760.index
