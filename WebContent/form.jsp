@@ -29,10 +29,23 @@
 	</script>
 </head>
 <body>
+	<!-- 
 	<form action="${pageContext.request.contextPath}/DoFormServlet" method="post" onsubmit="return doSubmit2()">
 		用户名：
 		<input type="text" name="username" />
 		<input type="submit" value="提交" id="submit">
 	</form>
+	 -->
+	 <form action="${pageContext.request.contextPath}/DoFormServlet" method="post">
+	 	<%-- 使用隐藏域存储生成的Token --%>
+	 	<%-- 
+	 		<input type="hidden" name="token" value="<%=session.getAttribute("token") %>" />
+	 	 --%>
+	 	 <%-- 使用EL表达式取出存储在Session中的token --%>
+	 	 <input type="hidden" name="token" value="${token }" />
+	 	 用户名：
+		<input type="text" name="username" />
+		<input type="submit" value="提交" id="submit">
+	 </form>
 </body>
 </html>
