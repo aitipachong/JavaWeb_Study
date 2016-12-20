@@ -13,4 +13,13 @@
     <param-name>url</param-name>
     <param-value>jdbc:mysql://localhost:3306/test</param-value>
   </context-param>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/ErrorPage/404Error.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/ErrorPage/500Error.jsp</location>
+  </error-page>
 </web-app>
